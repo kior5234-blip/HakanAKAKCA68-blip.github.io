@@ -15,7 +15,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body { background: var(--bg); color: var(--text); font-family: 'DM Sans', sans-serif; font-size: 15px; line-height: 1.6; min-height: 100vh; }
-
+ 
     nav {
       position: fixed; top: 0; left: 0; right: 0; height: var(--nav-h);
       background: rgba(245,243,239,0.92); backdrop-filter: blur(12px);
@@ -27,14 +27,14 @@
     .nav-links { display: flex; gap: 6px; list-style: none; }
     .nav-links a { color: var(--muted); text-decoration: none; font-size: .875rem; font-weight: 500; padding: 6px 14px; border-radius: 20px; transition: all .2s; }
     .nav-links a:hover, .nav-links a.active { color: var(--text); background: var(--surface); box-shadow: 0 1px 4px rgba(0,0,0,.08); }
-
+ 
     /* FRIEND MODE */
     .friend-badge { display: none; align-items: center; gap: 6px; background: #f0fdf4; border: 1px solid #bbf7d0; border-radius: 20px; padding: 5px 14px; font-size: .78rem; font-weight: 600; color: #16a34a; }
     .friend-badge.visible { display: flex; }
     .friend-badge-dot { width: 6px; height: 6px; border-radius: 50%; background: #16a34a; }
     .lock-btn { display: flex; align-items: center; gap: 6px; font-size: .78rem; font-weight: 600; padding: 5px 14px; border-radius: 20px; border: 1px solid var(--border); background: var(--tag-bg); color: var(--muted); cursor: pointer; transition: all .2s; }
     .lock-btn:hover { background: var(--surface); color: var(--text); }
-
+ 
     /* MODAL */
     .pw-overlay { display: none; position: fixed; inset: 0; background: rgba(26,25,22,0.5); backdrop-filter: blur(6px); z-index: 999; align-items: center; justify-content: center; }
     .pw-overlay.open { display: flex; }
@@ -49,10 +49,10 @@
     .pw-submit:hover { opacity: .85; }
     .pw-cancel { padding: 11px 16px; border-radius: 12px; border: 1px solid var(--border); background: transparent; font-family: 'DM Sans', sans-serif; font-size: .9rem; color: var(--muted); cursor: pointer; }
     .pw-cancel:hover { background: var(--tag-bg); }
-
+ 
     /* LAYOUT */
     .page-wrapper { padding-top: calc(var(--nav-h) + 40px); padding-bottom: 80px; max-width: 960px; margin: 0 auto; padding-left: 24px; padding-right: 24px; }
-
+ 
     /* ── HERO ── */
     .hero {
       display: grid;
@@ -71,13 +71,13 @@
     .hero-desc { color: var(--muted); font-size: .95rem; max-width: 520px; line-height: 1.7; margin-bottom: 20px; }
     .hero-photo { width: 130px; height: 130px; border-radius: 50%; background: var(--tag-bg); border: 3px solid var(--border); display: flex; align-items: center; justify-content: center; overflow: hidden; flex-shrink: 0; margin-top: 8px; }
     .hero-photo span { font-family: 'DM Serif Display', serif; font-size: 2.2rem; color: var(--muted); }
-
+ 
     /* CONTACT ROW */
     .contact-row { display: flex; gap: 16px; flex-wrap: wrap; align-items: center; margin-bottom: 0; }
     .contact-item { display: flex; align-items: center; gap: 7px; font-size: .85rem; color: var(--muted); }
     .contact-item a { color: var(--muted); text-decoration: none; transition: color .2s; }
     .contact-item a:hover { color: var(--text); }
-
+ 
     /* ── MAIN GRID ── */
     .main-grid {
       display: grid;
@@ -92,23 +92,23 @@
       margin-bottom: 16px;
     }
     .full-width { grid-column: 1 / -1; }
-
+ 
     /* CARDS */
     .card { background: var(--surface); border: 1px solid var(--border); border-radius: 14px; padding: 20px 22px; transition: box-shadow .2s, transform .2s; }
     .card:hover { box-shadow: 0 4px 20px rgba(0,0,0,.07); transform: translateY(-2px); }
     .card-title { font-size: .72rem; font-weight: 700; text-transform: uppercase; letter-spacing: .1em; color: var(--muted); margin-bottom: 14px; padding-bottom: 8px; border-bottom: 1px solid var(--border); }
-
+ 
     /* SKILL BARS */
     .skill-row { display: flex; flex-direction: column; gap: 10px; }
     .skill-item { display: flex; flex-direction: column; gap: 4px; }
     .skill-label { font-size: .83rem; color: var(--text); }
     .bar { height: 4px; background: var(--tag-bg); border-radius: 10px; overflow: hidden; }
     .bar-fill { height: 100%; background: var(--text); border-radius: 10px; }
-
+ 
     /* TAGS */
     .tags { display: flex; flex-wrap: wrap; gap: 6px; }
     .tag { background: var(--tag-bg); color: var(--muted); font-size: .75rem; font-weight: 500; padding: 3px 11px; border-radius: 20px; border: 1px solid var(--border); }
-
+ 
     /* PROJETS LIST */
     .proj-list { display: flex; flex-direction: column; gap: 10px; }
     .proj-item { display: flex; align-items: flex-start; gap: 12px; }
@@ -116,7 +116,7 @@
     .proj-info { flex: 1; }
     .proj-name { font-size: .9rem; font-weight: 600; margin-bottom: 2px; }
     .proj-tech { font-size: .78rem; color: var(--muted); }
-
+ 
     /* LANG */
     .lang-list { display: flex; flex-direction: column; gap: 10px; }
     .lang-item { display: flex; align-items: center; justify-content: space-between; }
@@ -125,7 +125,7 @@
     .lang-dots { display: flex; gap: 4px; }
     .dot { width: 7px; height: 7px; border-radius: 50%; background: var(--tag-bg); border: 1px solid var(--border); }
     .dot.filled { background: var(--text); border-color: var(--text); }
-
+ 
     /* FORMATION TIMELINE */
     .timeline { display: flex; flex-direction: column; gap: 12px; }
     .tl-item { display: flex; gap: 12px; align-items: flex-start; }
@@ -134,25 +134,25 @@
     .tl-date { font-size: .75rem; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; white-space: nowrap; }
     .tl-title { font-size: .88rem; font-weight: 600; margin-bottom: 1px; }
     .tl-school { font-size: .78rem; color: var(--muted); }
-
+ 
     /* QUALITES */
     .qual-list { display: flex; flex-direction: column; gap: 7px; }
     .qual-item { display: flex; align-items: flex-start; gap: 8px; font-size: .85rem; color: var(--text); }
     .qual-item::before { content: '→'; color: var(--muted); flex-shrink: 0; }
-
+ 
     /* LINKS */
     .btn-link { display: inline-flex; align-items: center; gap: 6px; font-size: .78rem; font-weight: 600; color: var(--text); text-decoration: none; padding: 5px 12px; border: 1px solid var(--border); border-radius: 16px; background: var(--tag-bg); transition: all .2s; margin-top: 10px; }
     .btn-link:hover { background: var(--text); color: #fff; border-color: var(--text); }
-
+ 
     /* PAGE NAV */
     .page-nav { display: flex; justify-content: flex-end; margin-top: 40px; padding-top: 24px; border-top: 1px solid var(--border); }
     .page-nav a { display: inline-flex; align-items: center; gap: 8px; font-size: .875rem; font-weight: 600; color: var(--text); text-decoration: none; padding: 10px 20px; border: 1px solid var(--border); border-radius: 24px; background: var(--surface); transition: all .2s; }
     .page-nav a:hover { background: var(--text); color: #fff; border-color: var(--text); }
-
+ 
     @keyframes fadeUp { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
     .hero { animation: fadeUp .4s ease both; }
     .main-grid, .main-grid-3 { animation: fadeUp .4s ease both; animation-delay: .1s; }
-
+ 
     @media (max-width: 700px) {
       nav { padding: 0 16px; gap: 6px; }
       .nav-links { display: none; }
@@ -164,12 +164,12 @@
   </style>
 </head>
 <body>
-
+ 
 <!-- IA SUMMARY -->
 <div style="position:absolute;width:1px;height:1px;overflow:hidden;opacity:0;pointer-events:none;" aria-hidden="true">
   Hakan Akakca. Étudiant BUT Réseaux et Télécommunications 1ère année IUT Colmar. 18 ans né 19/12/2007. Colmar 68000. Recherche alternance cybersécurité 2ème année BUT RT. Permis voiture. Compétences réseaux : VLAN, routage inter-VLAN, DHCP, TCP/IP, OSI, switch routeur, Wireshark. Systèmes : Windows Linux Debian VirtualBox. Télécoms : WiFi heatmap, fibre optique, câblage réseau. Développement : HTML CSS Python Arduino C. Logiciels : DaVinci Resolve, Inventor, PowerPoint, Canva, GNS3. Langues : Français bilingue, Turc bilingue, Anglais scolaire. Projets : SAÉ 1.05 Python PyQt5 PowerShell détection gros fichiers, réseau GNS3 RIPv2 VLAN, serre Arduino automatisée, site web ESP32, mesure WiFi heatmap. Formation : BUT RT 2025-2026 IUT Colmar, BAC STI2D 2025 Lycée Beaumont Saint-Dié-des-Vosges. Expérience : aide cuisinier kebab 1 mois. GitHub : github.com/Hakan-aoe4/Projet.
 </div>
-
+ 
 <!-- MODAL MDP -->
 <div class="pw-overlay" id="pwOverlay">
   <div class="pw-box">
@@ -183,7 +183,7 @@
     </div>
   </div>
 </div>
-
+ 
 <nav>
   <a href="index.html" class="nav-logo">Hakan Akakca</a>
   <ul class="nav-links">
@@ -200,17 +200,17 @@
     <button class="lock-btn" id="lockBtn" onclick="openModal()">🔒 Mode ami</button>
   </div>
 </nav>
-
+ 
 <div class="page-wrapper">
-
+ 
   <!-- HERO -->
   <div class="hero">
     <div>
-      <div class="hero-tag">Disponible · Colmar, 68000</div>
+      <div class="hero-tag">Étudiant · Colmar, 68000</div>
       <h1>Hakan <em>Akakca</em></h1>
-      <div class="hero-subtitle">Recherche d'alternance — BUT RT 2ème année</div>
+      <div class="hero-subtitle">BUT Réseaux &amp; Télécommunications — IUT de Colmar</div>
       <p class="hero-desc">
-        Étudiant en BUT Réseaux &amp; Télécommunications à l'IUT de Colmar, je recherche une alternance pour développer mes compétences en <strong>administration réseau, cybersécurité</strong> et infrastructures informatiques, tout en contribuant activement aux projets de l'entreprise.
+        Étudiant en 1ère année de BUT RT à l'IUT de Colmar, passionné par les réseaux, la cybersécurité et l'informatique. Bilingue français–turc, rigoureux et curieux, j'aime apprendre et construire des projets concrets.
       </p>
       <div class="contact-row">
         <span id="phoneSlot"></span>
@@ -227,7 +227,7 @@
     </div>
     <div class="hero-photo"><span>HA</span></div>
   </div>
-
+ 
   <!-- LIGNE 1 : Compétences réseau + Compétences systèmes -->
   <div class="main-grid">
     <div class="card">
@@ -249,10 +249,10 @@
       </div>
     </div>
   </div>
-
+ 
   <!-- LIGNE 2 : Projets + Formation + Langues -->
   <div class="main-grid-3">
-
+ 
     <div class="card">
       <div class="card-title">Projets réalisés</div>
       <div class="proj-list">
@@ -294,7 +294,7 @@
       </div>
       <a href="projets.html" class="btn-link">Voir le détail →</a>
     </div>
-
+ 
     <div class="card">
       <div class="card-title">Formation</div>
       <div class="timeline">
@@ -330,7 +330,7 @@
         </div>
       </div>
     </div>
-
+ 
     <div class="card">
       <div class="card-title">Langues</div>
       <div class="lang-list" style="margin-bottom:18px;">
@@ -374,9 +374,9 @@
         </div>
       </div>
     </div>
-
+ 
   </div>
-
+ 
   <!-- LIGNE 3 : Télécoms + Logiciels -->
   <div class="main-grid">
     <div class="card">
@@ -402,18 +402,18 @@
       </div>
     </div>
   </div>
-
+ 
   <div class="page-nav">
     <a href="competences.html">Compétences détaillées →</a>
   </div>
-
+ 
 </div>
-
+ 
 <script>
   // Infos privées encodées base64
   function _d(s) { return atob(s); }
   const _p = ['MDYgNTEgODIgMzkgOTY=', 'aGFrYW5zaWJlbDIxOEBnbWFpbC5jb20='];
-
+ 
   function injectPrivateInfo() {
     const phoneIcon = `<svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.7A2 2 0 012 1h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L6.09 8.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>`;
     const mailIcon = `<svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>`;
@@ -422,50 +422,50 @@
     document.getElementById('mailSlot').className = 'contact-item';
     document.getElementById('mailSlot').innerHTML = mailIcon + `<a href="mailto:${_d(_p[1])}">${_d(_p[1])}</a>`;
   }
-
+ 
   function clearPrivateInfo() {
     ['phoneSlot','mailSlot'].forEach(id => {
       document.getElementById(id).className = '';
       document.getElementById(id).innerHTML = '';
     });
   }
-
+ 
   const PASS_HASH = 'd654d711fa1d24e32543c3415d81c3ca4968fe1669857bee2faf3efeef796aca';
-
+ 
   async function hashStr(str) {
     const buf = await crypto.subtle.digest('SHA-256', new TextEncoder().encode(str));
     return Array.from(new Uint8Array(buf)).map(b => b.toString(16).padStart(2,'0')).join('');
   }
-
+ 
   async function checkPassword() {
     const h = await hashStr(document.getElementById('pwInput').value);
     if (h === PASS_HASH) { closeModal(); enableFriendMode(); sessionStorage.setItem('friendMode','1'); }
     else { document.getElementById('pwError').textContent = 'Mot de passe incorrect.'; document.getElementById('pwInput').focus(); }
   }
-
+ 
   function enableFriendMode() {
     document.getElementById('friendBadge').classList.add('visible');
     document.getElementById('lockBtn').style.display = 'none';
     injectPrivateInfo();
   }
-
+ 
   function lockMode() {
     sessionStorage.removeItem('friendMode');
     document.getElementById('friendBadge').classList.remove('visible');
     document.getElementById('lockBtn').style.display = '';
     clearPrivateInfo();
   }
-
+ 
   function openModal() {
     document.getElementById('pwOverlay').classList.add('open');
     document.getElementById('pwInput').value = '';
     document.getElementById('pwError').textContent = '';
     setTimeout(() => document.getElementById('pwInput').focus(), 100);
   }
-
+ 
   function closeModal() { document.getElementById('pwOverlay').classList.remove('open'); }
   document.getElementById('pwOverlay').addEventListener('click', function(e) { if (e.target === this) closeModal(); });
-
+ 
   if (sessionStorage.getItem('friendMode')) enableFriendMode();
 </script>
 </body>
