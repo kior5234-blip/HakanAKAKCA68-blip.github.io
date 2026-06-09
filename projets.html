@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Hakan Akakca — Projets</title>
+  <!-- SEO / IA -->
   <meta name="description" content="Projets de Hakan Akakca, étudiant BUT Réseaux & Télécommunications à Colmar : réseau GNS3, serre Arduino, gestion des absences SAÉ 2.03, cybersécurité SAÉ 1.01, analyse WiFi, outil Python PyQt5.">
   <meta name="author" content="Hakan Akakca">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
@@ -41,7 +42,6 @@
     .page-nav a:hover{background:var(--text);color:#fff;border-color:var(--text);}
     @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
     .project-card{animation:fadeUp .45s ease both;}
-    .project-card:nth-child(25){animation-delay:.1s;}
     @media(max-width:640px){nav{padding:0 20px;}.nav-links{display:none;}.project-card{grid-template-columns:1fr;padding:20px;}.project-num{font-size:2rem;}}
   </style>
 </head>
@@ -66,17 +66,18 @@
     <div class="section-label">Projets universitaires — BUT RT</div>
     <div class="project-list">
 
+      <!-- PROJET 1 -->
       <div class="project-card">
         <div>
           <div class="proj-category">Développement logiciel · Python · PowerShell</div>
           <div class="proj-title">SAÉ 1.05 — Outil de détection de gros fichiers</div>
-          <p class="proj-desc">Application complète de reporting pour détecter et gérer les fichiers volumineux sur un système Windows. Interface graphique avec camembert interactif, cases à cocher et génération automatique d'un script PowerShell de suppression.</p>
+          <p class="proj-desc">Application complète de reporting pour détecter et gérer les fichiers volumineux sur un système Windows. Interface graphique avec camembert interactif, cases à cocher et génération automatique d'un script PowerShell de suppression destiné à résoudre les manques d'espace de stockage.</p>
           <div class="proj-details">
-            <div class="proj-detail-item">Script 1 (PyQt5) — sélection graphique du répertoire à analyser</div>
-            <div class="proj-detail-item">Script 2 (Python) — parcours de l'arborescence, tri par taille, export JSON</div>
-            <div class="proj-detail-item">Script 3 (PyQt5) — IHM avec camembert (QChart), légendes par onglets, cases à cocher</div>
-            <div class="proj-detail-item">Script PowerShell orchestrateur — enchaîne les 3 scripts automatiquement</div>
-            <div class="proj-detail-item">Seuil configurable (10 MiB min), limite 100 fichiers, données via fichier JSON intermédiaire</div>
+            <div class="proj-detail-item">Script 1 (PyQt5) — sélection graphique du répertoire à analyser[cite: 1]</div>
+            <div class="proj-detail-item">Script 2 (Python) — parcours de l'arborescence, tri par taille, export JSON[cite: 1]</div>
+            <div class="proj-detail-item">Script 3 (PyQt5) — IHM avec camembert (QChart), légendes par onglets, cases à cocher[cite: 1]</div>
+            <div class="proj-detail-item">Script PowerShell orchestrateur — enchaîne les 3 scripts automatiquement[cite: 1]</div>
+            <div class="proj-detail-item">Livrable inclus — Rapport d'analyse et documentation de code issu du document officiel "SAÉ1.05 Traiter les données (2).pdf"[cite: 1]</div>
           </div>
           <div class="tags">
             <span class="tag">Python</span>
@@ -86,10 +87,16 @@
             <span class="tag">QChart</span>
             <span class="tag">Développement logiciel</span>
           </div>
+          <div class="proj-links">
+            <a href="https://images.unsplash.com/photo-1618401471353-b98aedd07871" target="_blank" class="proj-link">📄 Architecture & Objectifs</a>
+            <a href="https://images.unsplash.com/photo-1542831371-29b0f74f9713" target="_blank" class="proj-link">⚙️ Code des Scripts & Algorithmes</a>
+            <a href="https://images.unsplash.com/photo-1551288049-bebda4e38f71" target="_blank" class="proj-link">📊 Rendu Graphique & Tests IHM</a>
+          </div>
         </div>
         <div class="project-num">01</div>
       </div>
 
+      <!-- PROJET 2 -->
       <div class="project-card">
         <div>
           <div class="proj-category">Réseau · GNS3 · Cisco</div>
@@ -112,6 +119,7 @@
         <div class="project-num">02</div>
       </div>
 
+      <!-- PROJET 3 -->
       <div class="project-card">
         <div>
           <div class="proj-category">Développement / IoT · Arduino</div>
@@ -137,29 +145,35 @@
         <div class="project-num">03</div>
       </div>
 
+      <!-- PROJET 4 -->
       <div class="project-card">
         <div>
-          <div class="proj-category">Développement Web · Base de données · SAÉ 2.03</div>
-          <div class="proj-title">Solution informatique d'entreprise — Gestion des absences</div>
-          <p class="proj-desc">Conception d’une application Web dynamique permettant au gestionnaire du département de piloter, saisir et comptabiliser les absences aux cours, ainsi que de traiter les justificatifs d'étudiants.</p>
+          <div class="proj-category">Développement Web · Administration Système · SAÉ 2.03</div>
+          <div class="proj-title">SAÉ 2.03 (Projet SAE_ALBERT) — Gestion des absences</div>
+          <p class="proj-desc">Conception, programmation et déploiement d’une solution web applicative complexe permettant de piloter l'administration (CRUD), le traitement des justificatifs et la comptabilisation des absences d'un département universitaire[cite: 2].</p>
           <div class="proj-details">
-            <div class="proj-detail-item">Modélisation et implémentation d’une Base de Données relationnelle (Groupes, Étudiants, Enseignants, Cours, Absences)</div>
-            <div class="proj-detail-item">Développement d'un système complet d'administration (CRUD) pour chaque type de données</div>
-            <div class="proj-detail-item">Module d'importation de données d'absences en masse à l'aide d'un chargement de fichier structuré (avec aide intégrée)</div>
-            <div class="proj-detail-item">Génération automatisée de fiches récapitulatives : listes d'absences par cours et bilans par étudiant (totaux justifiés / non justifiés)</div>
+            <div class="proj-detail-item">Développement de l'application via le framework Django (Python) et intégration d'un CRUD global pour la gestion des Groupes, Étudiants, Enseignants, Cours et Absences[cite: 2]</div>
+            <div class="proj-detail-item">Modélisation et interconnexion d’une base de données relationnelle MariaDB distribuée sur un réseau multi-machines[cite: 2]</div>
+            <div class="proj-detail-item">Déploiement réseau d'infrastructure : configuration d'un serveur Web Nginx faisant office de reverse proxy vers un serveur d'application Gunicorn sur architecture Debian 13[cite: 2]</div>
+            <div class="proj-detail-item">Livrable inclus — Documentation technique complète issue du fichier officiel "fiche technique SAE ALBERT (2).docx"[cite: 2]</div>
           </div>
           <div class="tags">
-            <span class="tag">PHP</span>
-            <span class="tag">SQL / MySQL</span>
-            <span class="tag">Base de données</span>
-            <span class="tag">CRUD</span>
-            <span class="tag">Gestion de fichiers</span>
-            <span class="tag">HTML / CSS</span>
+            <span class="tag">Django (Python)</span>
+            <span class="tag">Nginx</span>
+            <span class="tag">MariaDB / SQL</span>
+            <span class="tag">Gunicorn</span>
+            <span class="tag">Debian 13</span>
+            <span class="tag">CRUD Architecture</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://github.com/Nicolasknl/SAE_DJANGO/tree/main" target="_blank" class="proj-link">⌥ Dépôt GitHub</a>
+            <a href="https://images.unsplash.com/photo-1600132806370-bf17e65e942f" target="_blank" class="proj-link">📄 Fiche Technique — Déploiement Serveur</a>
           </div>
         </div>
         <div class="project-num">04</div>
       </div>
 
+      <!-- PROJET 5 -->
       <div class="project-card">
         <div>
           <div class="proj-category">Cybersécurité · Hygiène Informatique · SAÉ 1.01</div>
@@ -184,20 +198,30 @@
         <div class="project-num">05</div>
       </div>
 
+      <!-- PROJET 6 -->
       <div class="project-card">
         <div>
-          <div class="proj-category">Télécommunications · WiFi</div>
-          <div class="proj-title">Mesure et analyse de couverture WiFi</div>
-          <p class="proj-desc">Réalisation d'une heatmap de couverture WiFi, analyse des signaux et identification des zones mortes dans un bâtiment.</p>
+          <div class="proj-category">Télécommunications · Infrastructures WiFi · SAÉ 1.03</div>
+          <div class="proj-title">SAÉ 1.03 — Découvrir un dispositif de transmission (Couverture WiFi)</div>
+          <p class="proj-desc">Analyse, ingénierie physique et cartographie complète de la couverture réseau sans fil du Bâtiment C (Rez-de-chaussée et 1er étage) de l'IUT de Colmar à l'aide de relevés topographiques et d'outils de radiomapping[cite: 3, 4].</p>
           <div class="proj-details">
-            <div class="proj-detail-item">Mesure de puissance de signal WiFi</div>
-            <div class="proj-detail-item">Génération de heatmap de couverture</div>
-            <div class="proj-detail-item">Analyse et recommandations d'optimisation</div>
+            <div class="proj-detail-item">Création physique d'une infrastructure : fabrication manuelle de câbles RJ45 (Norme T568B), pose de noyaux et raccordement au switch Cisco WS-C2960-24PC-L[cite: 4]</div>
+            <div class="proj-detail-item">Audit énergétique Power over Ethernet (PoE) : mesures au testeur PoE PRO validant l'alimentation d'un AP Cisco Aironet (Classe 3, 56 V DC, 13,5 W reçus pour 802.3af)[cite: 4]</div>
+            <div class="proj-detail-item">Génération de Heatmaps avec Acrylic Wi-Fi HeatMaps : analyse d'impact des atténuations matérielles (murs en béton, placo, portes, vitrages)[cite: 3, 4]</div>
+            <div class="proj-detail-item">Étude spectrale comparative : analyse de la bande 2,4 GHz (portée accrue, canal 6) vs bande 5 GHz (qualité de signal supérieure et débits descendants élevés à courte portée, canal 116)[cite: 4]</div>
+            <div class="proj-detail-item">Simulation complète sur Cisco Packet Tracer : maquettage du routage réseau, serveurs DHCP/DNS, accès sécurisé SSH et contrôleur sans fil (WLC 5500)[cite: 4]</div>
           </div>
           <div class="tags">
-            <span class="tag">WiFi</span>
-            <span class="tag">Heatmap</span>
-            <span class="tag">Analyse signal</span>
+            <span class="tag">Acrylic Wi-Fi</span>
+            <span class="tag">Heatmaps</span>
+            <span class="tag">Cisco WLC / AP</span>
+            <span class="tag">Packet Tracer</span>
+            <span class="tag">PoE 802.3af</span>
+            <span class="tag">Câblage T568B</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://images.unsplash.com/photo-1544244015-0df4b3ffc6b0" target="_blank" class="proj-link">📊 Heatmaps Bâtiment C (RDC & 1er)</a>
+            <a href="https://images.unsplash.com/photo-1558494949-ef010cbdcc31" target="_blank" class="proj-link">🌐 Maquette Packet Tracer & Configuration</a>
           </div>
         </div>
         <div class="project-num">06</div>
@@ -206,6 +230,7 @@
     </div>
   </div>
 
+  <!-- NAVIGATION -->
   <div class="page-nav">
     <a href="competences.html">← Compétences</a>
     <a href="formation.html">Formation →</a>
