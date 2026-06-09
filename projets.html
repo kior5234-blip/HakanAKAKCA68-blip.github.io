@@ -3,8 +3,7 @@
 <head>
   <meta charset="utf-8">
   <title>Hakan Akakca — Projets</title>
-  <!-- SEO / IA -->
-  <meta name="description" content="Projets de Hakan Akakca, étudiant BUT Réseaux & Télécommunications à Colmar : réseau GNS3, serre Arduino, site ESP32, analyse WiFi, outil Python PyQt5.">
+  <meta name="description" content="Projets de Hakan Akakca, étudiant BUT Réseaux & Télécommunications à Colmar : réseau GNS3, serre Arduino, gestion des absences SAÉ 2.03, cybersécurité SAÉ 1.01, analyse WiFi, outil Python PyQt5.">
   <meta name="author" content="Hakan Akakca">
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,300&family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet">
   <style>
@@ -42,10 +41,7 @@
     .page-nav a:hover{background:var(--text);color:#fff;border-color:var(--text);}
     @keyframes fadeUp{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}
     .project-card{animation:fadeUp .45s ease both;}
-    .project-card:nth-child(2){animation-delay:.1s;}
-    .project-card:nth-child(3){animation-delay:.2s;}
-    .project-card:nth-child(4){animation-delay:.3s;}
-    .project-card:nth-child(5){animation-delay:.4s;}
+    .project-card:nth-child(25){animation-delay:.1s;}
     @media(max-width:640px){nav{padding:0 20px;}.nav-links{display:none;}.project-card{grid-template-columns:1fr;padding:20px;}.project-num{font-size:2rem;}}
   </style>
 </head>
@@ -70,7 +66,6 @@
     <div class="section-label">Projets universitaires — BUT RT</div>
     <div class="project-list">
 
-      <!-- PROJET 1 -->
       <div class="project-card">
         <div>
           <div class="proj-category">Développement logiciel · Python · PowerShell</div>
@@ -95,7 +90,6 @@
         <div class="project-num">01</div>
       </div>
 
-      <!-- PROJET 2 -->
       <div class="project-card">
         <div>
           <div class="proj-category">Réseau · GNS3 · Cisco</div>
@@ -118,7 +112,6 @@
         <div class="project-num">02</div>
       </div>
 
-      <!-- PROJET 3 -->
       <div class="project-card">
         <div>
           <div class="proj-category">Développement / IoT · Arduino</div>
@@ -144,27 +137,53 @@
         <div class="project-num">03</div>
       </div>
 
-      <!-- PROJET 4 -->
       <div class="project-card">
         <div>
-          <div class="proj-category">Web / IoT · ESP32</div>
-          <div class="proj-title">Site web hébergé sur ESP32</div>
-          <p class="proj-desc">Création d'un site web complet avec interface graphique, mis en ligne via un serveur embarqué sur un microcontrôleur ESP32.</p>
+          <div class="proj-category">Développement Web · Base de données · SAÉ 2.03</div>
+          <div class="proj-title">Solution informatique d'entreprise — Gestion des absences</div>
+          <p class="proj-desc">Conception d’une application Web dynamique permettant au gestionnaire du département de piloter, saisir et comptabiliser les absences aux cours, ainsi que de traiter les justificatifs d'étudiants.</p>
           <div class="proj-details">
-            <div class="proj-detail-item">Développement HTML / CSS</div>
-            <div class="proj-detail-item">Hébergement sur serveur ESP32</div>
-            <div class="proj-detail-item">Interface graphique personnalisée</div>
+            <div class="proj-detail-item">Modélisation et implémentation d’une Base de Données relationnelle (Groupes, Étudiants, Enseignants, Cours, Absences)</div>
+            <div class="proj-detail-item">Développement d'un système complet d'administration (CRUD) pour chaque type de données</div>
+            <div class="proj-detail-item">Module d'importation de données d'absences en masse à l'aide d'un chargement de fichier structuré (avec aide intégrée)</div>
+            <div class="proj-detail-item">Génération automatisée de fiches récapitulatives : listes d'absences par cours et bilans par étudiant (totaux justifiés / non justifiés)</div>
           </div>
           <div class="tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-            <span class="tag">ESP32</span>
+            <span class="tag">PHP</span>
+            <span class="tag">SQL / MySQL</span>
+            <span class="tag">Base de données</span>
+            <span class="tag">CRUD</span>
+            <span class="tag">Gestion de fichiers</span>
+            <span class="tag">HTML / CSS</span>
           </div>
         </div>
         <div class="project-num">04</div>
       </div>
 
-      <!-- PROJET 5 -->
+      <div class="project-card">
+        <div>
+          <div class="proj-category">Cybersécurité · Hygiène Informatique · SAÉ 1.01</div>
+          <div class="proj-title">SAÉ 1.01 — Sensibilisation à l'hygiène informatique et à la cybersécurité</div>
+          <p class="proj-desc">Création d'un support vidéo pédagogique et d'une étude de cas visant à sensibiliser les utilisateurs aux bonnes pratiques de sécurité, à la gestion des mots de passe et à la protection des données personnelles.</p>
+          <div class="proj-details">
+            <div class="proj-detail-item">Analyse des risques de sécurité courants (Phishing, ingénierie sociale, vulnérabilités systèmes)</div>
+            <div class="proj-detail-item">Vulgarisation des concepts techniques clés pour un public non averti</div>
+            <div class="proj-detail-item">Montage, réalisation et production d'une vidéo explicative dynamique</div>
+          </div>
+          <div class="tags">
+            <span class="tag">Cybersécurité</span>
+            <span class="tag">Sensibilisation</span>
+            <span class="tag">Hygiène Informatique</span>
+            <span class="tag">Protection des données</span>
+            <span class="tag">Vidéo</span>
+          </div>
+          <div class="proj-links">
+            <a href="https://youtu.be/PUOPbD3qgug" target="_blank" class="proj-link">▶ Vidéo de sensibilisation</a>
+          </div>
+        </div>
+        <div class="project-num">05</div>
+      </div>
+
       <div class="project-card">
         <div>
           <div class="proj-category">Télécommunications · WiFi</div>
@@ -181,7 +200,7 @@
             <span class="tag">Analyse signal</span>
           </div>
         </div>
-        <div class="project-num">05</div>
+        <div class="project-num">06</div>
       </div>
 
     </div>
